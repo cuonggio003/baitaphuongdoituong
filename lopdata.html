@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lớp Data</title>
+</head>
+<body>
+<script>
+
+    class Date {
+        day;
+        month;
+        year;
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day;
+        }
+        getMonth() {
+            return this.month;
+        }
+        getYear() {
+            return this.year;
+        }
+
+        setDay(day) {
+            this.day = day;
+        }
+        setMonth(month) {
+            this.month = month;
+        }
+        setYear(year) {
+            this.year = year;
+        }
+    }
+    let date = new Date(15,9,2014);
+    document.write(date.getDay() + '/' + date.getMonth() + '/' + date.getYear() + '<br>');
+
+    date.setDay(31);
+    date.setMonth(7);
+    date.setYear(2021);
+    document.write(date.getDay() + '/' + date.getMonth() + '/' + date.getYear());
+</script>
+</body>
+</html>
